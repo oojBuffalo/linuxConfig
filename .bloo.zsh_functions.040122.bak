@@ -1,0 +1,6 @@
+# File for creating and loading useful functions into environment.
+
+function hex () { printf $1 | xxd -u -p }
+function unhex () { printf $1 | xxd -r -p }
+
+function textme { echo "$@" | mail 6147694515@vtext.com }
